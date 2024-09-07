@@ -1,0 +1,56 @@
+body {
+    background-image: linear-gradient(rgb(238, 139, 238), purple);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centerDiv {    
+    text-align: center;
+}
+
+#centerDiv h1 {
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 2px 5px purple;
+    font-family: "Rubik", sans-serif;
+}
+
+#centerDiv input {
+    padding: 30px;
+    width: 80%;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    outline-color: purple;
+    text-align: center;
+}
+
+#centerDiv button {
+    width: 80%;
+    padding: 30px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    background-color: rgb(239, 176, 239);
+    color: rgb(66, 8, 66);
+    transition: 0.5s;
+}
+
+#centerDiv button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+
+#centerDiv button:active {
+    background-color: rgb(66, 8, 66);
+}
+
+@media (max-width: 767px) {
+    #centerDiv h1 {
+        font-size: 60px;
+    }
+}
