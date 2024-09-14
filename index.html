@@ -13,13 +13,24 @@
 </head>
 <body>
     <div id="centerDiv">
-        <h1>QR Generator</h1>
-        <br><br>
-        <input type="text" placeholder="enter your text" id="userInput">
-        <br><br>
-        <button onclick="generateCode()">Generate</button>
-        <br><br>
-        <canvas id="qrCode"></canvas>
+        <div id="generateDiv">
+            <h1>QR Generator</h1>
+            <br><br>
+            <input type="text" placeholder="enter what you want..." id="userInput">
+            <br><br>
+            <button onclick="generateCode()">Generate</button>
+            <br><br>
+        </div>
+        <div class="divider"></div>
+        <div id="resultDiv">
+            <div id="adsDiv">
+                ADS
+            </div>
+            <br><br>
+            <canvas id="qrCode"></canvas>
+            <br><br>
+            <p id="qrText"></p>
+        </div>
     </div>
 </body>
 </html>

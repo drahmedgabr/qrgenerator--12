@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(rgb(238, 139, 238), purple);
     min-height: 100vh;
@@ -49,8 +53,58 @@ body {
     background-color: rgb(66, 8, 66);
 }
 
+canvas {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+.divider {
+    width: 3px;
+    height: 60vh;
+    background-color: white;
+    margin: 0 100px;
+    display: none;
+}
+
+#qrText {
+    font-size: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#adsDiv {
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 @media (max-width: 767px) {
     #centerDiv h1 {
         font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #centerDiv {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #centerDiv #generateDiv {
+        flex-grow: 1;
+    }
+    
+    .divider {
+        display: block;
     }
 }
